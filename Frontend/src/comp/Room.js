@@ -35,7 +35,7 @@ const Room = () => {
   const [showSidePanel, setShowSidePanel] = useState(null);
 
   const enter = () => {
-    socketRef.current = io.connect("https://vercel.com/ashu-rajputs-projects/talk-nest-778p/YFBeRFXgMAWCa7zJc3njiPiXLRCe/"); // backend url
+    socketRef.current = io.connect("https://talknest02.onrender.com/"); // backend url
     navigator.mediaDevices
       .getUserMedia({ video: true, audio: true })
       .then((stream) => {
